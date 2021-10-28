@@ -1,6 +1,6 @@
 import React, { useState } from  'react';
     
-    
+    // UGLY WITH VALIDATIONS ON FRONT END!!!
 const UserForm = (props) => {
     const [firstName, setFirstName] = useState("");
     const [firstNameError, setFirstNameError] = useState("");
@@ -24,9 +24,10 @@ const UserForm = (props) => {
         } else if(e.target.value.length < 3) {
             setLastNameError("Last Name must be 2 characters or longer!");
         }
-        else{
+        else{ 
             setLastNameError("");
         }
+
     }
     const [email, setEmail] = useState("");
     const [emailError, setEmailError] = useState("");
